@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<!-- saved from url=(0019)http://demo.st.cc/# -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>舆情系统</title>
+    <link href="http://demo.st.cc/static/img/favicon.ico" rel="shortcut icon">
+    <link href="./舆情系统_files/bootstrap.min14ed.css" rel="stylesheet">
+    <link href="./舆情系统_files/font-awesome.min93e3.css" rel="stylesheet">
+    <link href="./舆情系统_files/animate.min.css" rel="stylesheet">
+    <link href="./舆情系统_files/style.css" rel="stylesheet">
+    <link href="./舆情系统_files/jquery.gritter.css" rel="stylesheet">
+<link rel="stylesheet" href="./舆情系统_files/layer.css" id="layui_layer_skinlayercss" style=""></head>
+
+<body class="fixed-sidebar  pace-done"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+    <!--顶部导航-->
+    <div id="wrapper">
+        <nav class="navbar navbar-static-top" role="navigation">
+            <div class="nav-header">
+                <h1>舆情系统</h1>
+                <img src="./舆情系统_files/logo-white-min.svg">
+            </div>
+            <div class="navbar-container container-fluid">
+                <a class="navbar-minimalize minimalize-styl-2 pull-left" href="javascript:;">
+                    <i class="iconfont iconzhanchu"></i>
+                    <i class="iconfont iconshouqi img-arrow"></i>
+                </a>
+                <a class="navbar-minimalize minimalize-styl-2 minimalize-styl-3 pull-left" href="javascript:;">
+                    <i class="iconfont iconzhanchu"></i>
+                    <i class="iconfont iconshouqi img-arrow"></i>
+                </a>
+                <ul class="pull-left nav-left"><li data-index="1" data-i="0" class=""><a href="http://demo.st.cc/#"><i class="fa fa-tasks"></i><span>舆情</span></a></li><li data-index="49" data-i="1"><a href="http://demo.st.cc/#"><i class="fa fa-eye"></i><span>审核</span></a></li><li data-index="53" data-i="2" class="active"><a href="http://demo.st.cc/#"><i class="fa fa fa-sticky-note"></i><span>订单</span></a></li><li data-index="60" data-i="3"><a href="http://demo.st.cc/#"><i class="fa fa fa-pie-chart"></i><span>报表</span></a></li><li data-index="67" data-i="4"><a href="http://demo.st.cc/#"><i class="fa fa fa-database"></i><span>基础数据</span></a></li><li data-index="82" data-i="5"><a href="http://demo.st.cc/#"><i class="fa fa fa-gear"></i><span>系统</span></a></li>
+                    <div class="dropdown pull-left" id="navbarSubMenu" style="display: none; left: 500px;">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="http://demo.st.cc/#" data-animation="slide-bottom" aria-expanded="true" role="button" style="display: none;"><i class="fa fa-ellipsis-v"></i></a>
+                        <ul class="dropdown-menu" role="menu"></ul>
+                    </div>
+                </ul>
+
+                <div class="pull-right nav-right">
+                    <div class="user-info-wrap pull-left">
+                        <img src="./舆情系统_files/user-info.png" class="pull-left">
+                        <div class="pull-left user-info-r">
+                            <div class="user-info-r-inner">
+                                admin - test
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="notify-wrap pull-left">
+                        <a href="javascript:;" class="msg-btn" data-toggle="tooltip" data-placement="bottom" title="消息" data-trigger="hover">
+                            <i class="iconfont iconxiaoxi" aria-hidden="true"></i>
+                            <span class="badge-dot badge-danger msg-num" style="display:none;">0</span>
+                        </a>
+                    </div>-->
+                    <a href="javascript:;" class="screen pull-left" id="screen-btn" data-toggle="tooltip" data-placement="bottom" title="" data-trigger="hover" data-original-title="全屏"><i class="iconfont iconquanping"></i></a>
+                    <a href="http://demo.st.cc/?ac=logout" class="pull-left J_tabExit" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="退出"><i class="iconfont icontuichu"></i></a>
+                </div>
+            </div>
+            <div class="muen-icon-wrap open">
+                <i class="fa fa-ellipsis-h"></i>
+            </div>
+        </nav>
+        <!--左侧导航开始-->
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse" style="transform: translate3d(0px, 0px, 0px); height: 862px;"><ul id="side-menu" class="nav in"><li class="nav54 active"><a class="has-child" href="http://demo.st.cc/#" data-index="54" data-key="undefined"><i class="fa fa_fa fa-edit"></i> <span class="nav-label">操作</span><span class="fa arrow"></span></a><ul class="nav nav-second-level collapse in" style="display: block;"><li class="nav55"><a class="J_menuItem" href="http://demo.st.cc/?ct=ng_order&amp;ac=add&amp;display_project=1" data-index="55" data-key="undefined" data-reload="true"><i class="fa fa_undefined"></i> <span class="nav-label">新增舆论订单</span></a></li><li class="nav56 active"><a class="J_menuItem" href="http://demo.st.cc/?ct=group_order&amp;ac=add&amp;display_project=1" data-index="56" data-key="undefined" data-reload="true"><i class="fa fa_undefined"></i> <span class="nav-label">新增舆论群订单</span></a></li></ul></li><li class="nav57"><a class="has-child" href="http://demo.st.cc/#" data-index="57" data-key="undefined"><i class="fa fa_fa fa-sticky-note"></i> <span class="nav-label">订单</span><span class="fa arrow"></span></a><ul class="nav nav-second-level collapse" style="display: none;"><li class="nav58"><a class="J_menuItem" href="http://demo.st.cc/?ct=ng_order&amp;ac=index&amp;display_project=1" data-index="58" data-key="undefined" data-reload="true"><i class="fa fa_undefined"></i> <span class="nav-label">舆论订单</span></a></li><li class="nav59"><a class="J_menuItem" href="http://demo.st.cc/?ct=group_order&amp;ac=index&amp;display_project=1" data-index="59" data-key="undefined" data-reload="true"><i class="fa fa_undefined"></i> <span class="nav-label">舆论群订单</span></a></li></ul></li></ul></div>
+        </nav>
+        <!--左侧导航结束-->
+        <!--右侧部分开始-->
+        <div id="page-wrapper" style="width: 1435px;">
+            <div class="content-tabs content-tabs-shadow">
+                <button class="roll-nav roll-left J_tabLeft"><i class="iconfont iconjiantouzuo"></i></button>
+                <nav class="page-tabs J_menuTabs">
+                    <div class="page-tabs-content" style="margin-left: 0px;">
+                        <!--<a href="javascript:;" class="active J_menuTab" data-id="approve.html" data-index="9">审批申请</a>-->
+                    <a href="javascript:;" class="J_menuTab" data-id="?ct=project&amp;ac=index&amp;display_project=1" data-index="10" data-reload="true">项目列表</a><a href="javascript:;" class="J_menuTab active" data-id="?ct=group_order&amp;ac=add&amp;display_project=1" data-index="56" data-reload="true">新增舆论群订单 <i class="iconfont iconguanbi"></i></a><a href="javascript:;" class="J_menuTab" data-id="?ct=group_order&amp;ac=index&amp;display_project=1" data-index="59" data-reload="true">舆论群订单 <i class="iconfont iconguanbi"></i></a></div>
+                </nav>
+                <button class="roll-nav roll-right J_tabRight"><i class="iconfont iconjiantouyou"></i></button>
+                <button class="roll-nav refresh-btn" onclick="fnIfram()"><i class="iconfont iconshuaxin"></i></button>
+                <div class="btn-group roll-nav roll-right dropdown">
+                    <button class="J_tabClose" data-toggle="dropdown">关闭操作<span class="caret"></span></button>
+                    <ul role="menu" class="dropdown-menu dropdown-menu-right">
+                        <li class="J_tabShowActive"><a>定位当前选项卡</a> </li>
+                        <li class="divider"></li>
+                        <li class="J_tabCloseAll"><a>关闭全部选项卡</a> </li>
+                        <li class="J_tabCloseOther"><a>关闭其他选项卡</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="J_mainContent" id="content-main" style="width: 1435px; height: 821px;">
+                <!--<iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="approve.html" frameborder="0" data-id="approve.html" seamless></iframe>-->
+             <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="./舆情系统_files/saved_resource.html" frameborder="0" data-id="?ct=project&amp;ac=index&amp;display_project=1" seamless="" id="iframe" style="display: none;"></iframe><iframe class="J_iframe" name="iframe59" width="100%" height="100%" src="./舆情系统_files/saved_resource(1).html" frameborder="0" data-id="?ct=group_order&amp;ac=index&amp;display_project=1" seamless="" style="display: none;"></iframe><iframe class="J_iframe" name="iframe56" width="100%" height="100%" src="./舆情系统_files/saved_resource(2).html" frameborder="0" data-id="?ct=group_order&amp;ac=add&amp;display_project=1" seamless=""></iframe></div>
+
+        </div>
+        <!--右侧部分结束-->
+    </div>
+    <script src="./舆情系统_files/jquery.min.js"></script>
+    <script src="./舆情系统_files/bootstrap.min.js"></script>
+    <script src="./舆情系统_files/jquery.metisMenu.js"></script>
+    <script src="./舆情系统_files/jquery.slimscroll.min.js"></script>
+    <script src="./舆情系统_files/layer.min.js"></script>
+    <script src="./舆情系统_files/hplus.min.js"></script>
+    <script src="./舆情系统_files/contabs.min.js"></script>
+    <script src="./舆情系统_files/pace.min.js"></script>
+    <script src="./舆情系统_files/common.js"></script>
+    <script src="./舆情系统_files/jquery.gritter.min.js"></script><audio id="toastr-audio" src="static/core/frame/audio/tips.mp3" style="display: none;"></audio>
+    <script src="./舆情系统_files/jquery.peity.min.js"></script>
+    <script src="./舆情系统_files/interface.js"></script>
+    <!--<script src="static/core/frame/js/plugins/switch/switch.js"></script>
+    <script src="static/core/frame/js/websocket.js"></script>-->
+    <script>
+        var MenuData = [{"id":"1","parentid":0,"topid":0,"name":"舆情","class":"fa-tasks","children":[{"id":"2","parentid":"1","topid":"1","name":"操作","class":"fa fa-edit","children":[{"id":"3","parentid":"2","topid":"1","name":"新增母项目","ct":"project","ac":"add","reload":"1","url":"?ct=project&ac=add"},{"id":"4","parentid":"2","topid":"1","name":"新增子平台","ct":"project","ac":"project_chird_add","reload":"1","url":"?ct=project&ac=project_chird_add"},{"id":"5","parentid":"2","topid":"1","name":"新增舆论","ct":"ng_sentiment","ac":"add","url":"?ct=ng_sentiment&ac=add&display_project=1","reload":"1"},{"id":"6","parentid":"2","topid":"1","name":"新增舆论群","ct":"base_group","ac":"add","url":"?ct=base_group&ac=add&display_project=1"},{"id":"7","parentid":"2","topid":"1","name":"新增群动态","ct":"group_dynamic","ac":"add_dynamic","url":"?ct=group_dynamic&ac=add_dynamic&display_project=1"},{"id":"8","parentid":"2","topid":"1","name":"新增涉赌新闻","ct":"news","ac":"add","reload":"1","url":"?ct=news&ac=add&display_project=1"}]},{"id":"9","parentid":"1","topid":"1","name":"项目资料","class":"fa fa-flag-checkered","children":[{"id":"10","parentid":"9","topid":"1","name":"项目列表","ct":"project","ac":"index","reload":"1","default":"1","url":"?ct=project&ac=index&display_project=1"}]},{"id":"14","parentid":"1","topid":"1","name":"舆论","class":"fa fa-comments-o","children":[{"id":"15","parentid":"14","topid":"1","name":"舆论列表","ct":"ng_sentiment","ac":"index","url":"?ct=ng_sentiment&ac=index&display_project=1","reload":"1"},{"id":"16","parentid":"14","topid":"1","name":"舆论采集","ct":"gather","ac":"index","url":"?ct=gather&ac=index"}]},{"id":"19","parentid":"1","topid":"1","name":"舆论群","class":"fa fa-users","children":[{"id":"20","parentid":"19","topid":"1","name":"舆论群列表","ct":"base_group","url":"?ct=base_group&ac=index&display_project=1","ac":"index","reload":"1"},{"id":"28","parentid":"19","topid":"1","name":"群动态列表","ct":"group_dynamic","ac":"index","url":"?ct=group_dynamic&index&display_project=1","reload":"1"}]},{"id":"32","parentid":"1","topid":"1","name":"涉赌新闻","class":"fa fa-newspaper-o","children":[{"id":"33","parentid":"32","topid":"1","name":"涉赌新闻列表","ct":"news","ac":"index","reload":"1","default":"1","url":"?ct=news&ac=index&display_project=other"}]}]},{"id":"49","parentid":0,"topid":0,"name":"审核","class":"fa-eye","children":[{"id":"50","parentid":"49","topid":"49","name":"订单审核","class":"fa fa-sticky-note-o","children":[{"id":"51","parentid":"50","topid":"49","name":"审核中","ct":"ng_order","ac":"accept","reload":"1","url":"?ct=ng_order&ac=index&display_project=1&audit=accept"},{"id":"52","parentid":"50","topid":"49","name":"已审核","ct":"ng_order","ac":"finish","reload":"1","url":"?ct=ng_order&ac=index&display_project=1&audit=finish"}]}]},{"id":"53","parentid":0,"topid":0,"name":"订单","class":"fa fa-sticky-note","children":[{"id":"54","parentid":"53","topid":"53","name":"操作","class":"fa fa-edit","children":[{"id":"55","parentid":"54","topid":"53","name":"新增舆论订单","ct":"ng_order","ac":"add","reload":"1","url":"?ct=ng_order&ac=add&display_project=1"},{"id":"56","parentid":"54","topid":"53","name":"新增舆论群订单","ct":"group_order","ac":"add","url":"?ct=group_order&ac=add&display_project=1","reload":"1"}]},{"id":"57","parentid":"53","topid":"53","name":"订单","class":"fa fa-sticky-note","children":[{"id":"58","parentid":"57","topid":"53","name":"舆论订单","ct":"ng_order","ac":"index","reload":"1","default":"1","url":"?ct=ng_order&ac=index&display_project=1"},{"id":"59","parentid":"57","topid":"53","name":"舆论群订单","ct":"group_order","ac":"index","url":"?ct=group_order&ac=index&display_project=1","reload":"1"}]}]},{"id":"60","parentid":0,"topid":0,"name":"报表","class":"fa fa-pie-chart","children":[{"id":"61","parentid":"60","topid":"60","name":"舆论分析","ct":"statement","ac":"consensus","reload":"1","class":"fa fa-table ","url":"?ct=statement&ac=consensus"},{"id":"62","parentid":"60","topid":"60","name":"项目分析","ct":"statement","ac":"project","reload":"1","class":"fa fa-line-chart","url":"?ct=statement&ac=project"},{"id":"64","parentid":"60","topid":"60","name":"舆论订单分析","ct":"statement","ac":"ng_order","reload":"1","class":"fa fa-bar-chart","url":"?ct=statement&ac=ng_order"},{"id":"66","parentid":"60","topid":"60","name":"已删除舆论分析","ct":"statement","ac":"finished_ng_order","reload":"1","class":"fa fa-industry","url":"?ct=statement&ac=finished_ng_order"}]},{"id":"67","parentid":0,"topid":0,"name":"基础数据","class":"fa fa-database","children":[{"id":"68","parentid":"67","topid":"67","name":"操作","class":"fa fa-list-alt","children":[{"id":"69","parentid":"68","topid":"67","name":"新增搜索来源","ct":"base_platform","ac":"add","reload":"1","url":"?ct=base_platform&ac=add"},{"id":"70","parentid":"68","topid":"67","name":"新增危机度","ct":"base_risk","ac":"add","reload":"1","url":"?ct=base_risk&ac=add"},{"id":"71","parentid":"68","topid":"67","name":"新增关键字","ct":"gather","ac":"keyword_add","url":"?ct=gather&ac=keyword_add&display_project=1"}]},{"id":"72","parentid":"67","topid":"67","name":"数据","class":"fa fa-database","children":[{"id":"73","parentid":"72","topid":"67","name":"搜索来源列表","ct":"base_platform","ac":"index","reload":"1","url":"?ct=base_platform&ac=index"},{"id":"74","parentid":"72","topid":"67","name":"关键字列表","ct":"gather","ac":"keyword_list","url":"?ct=gather&ac=keyword_list"},{"id":"75","parentid":"72","topid":"67","name":"危机度列表","ct":"base_risk","ac":"index","reload":"1","url":"?ct=base_risk&ac=index"}]},{"id":"76","parentid":"67","topid":"67","name":"上传功能","class":"fa fa-cloud-upload","children":[{"id":"77","parentid":"76","topid":"67","name":"母项目上传","ct":"project","ac":"index","url":"?ct=upload_files&ac=index&type=0","reload":"1"},{"id":"78","parentid":"76","topid":"67","name":"子平台上传","ct":"project","ac":"index","url":"?ct=upload_files&ac=index&type=1","reload":"1"},{"id":"79","parentid":"76","topid":"67","name":"舆论上传","ct":"upload_files","ac":"index","url":"?ct=upload_files&ac=index&type=2","reload":"1"},{"id":"80","parentid":"76","topid":"67","name":"群动态上传","ct":"upload_files","ac":"index","url":"?ct=upload_files&ac=index&type=5","reload":"1"},{"id":"81","parentid":"76","topid":"67","name":"涉赌新闻上传","ct":"upload_files","ac":"index","reload":"1","default":"1","url":"?ct=upload_files&ac=index&type=4"}]}]},{"id":"82","parentid":0,"topid":0,"name":"系统","class":"fa fa-gear","children":[{"id":"83","parentid":"82","topid":"82","name":"个人中心","class":"fa fa-user","children":[{"id":"84","parentid":"83","topid":"82","name":"登陆密码","ct":"admin","ac":"editpwd","url":"?ct=admin&ac=editpwd"},{"id":"85","parentid":"83","topid":"82","name":"伪装密码","ct":"admin","ac":"editpwd_fake","url":"?ct=admin&ac=editpwd_fake"},{"id":"86","parentid":"83","topid":"82","name":"我的权限","ct":"admin","ac":"mypurview","url":"?ct=admin&ac=mypurview"}]},{"id":"87","parentid":"82","topid":"82","name":"用户管理","class":"fa fa-users","children":[{"id":"88","parentid":"87","topid":"82","name":"用户组管理","ct":"admin_group","ac":"index","url":"?ct=admin_group&ac=index"},{"id":"92","parentid":"87","topid":"82","name":"用户管理","ct":"admin","ac":"index","url":"?ct=admin&ac=index"},{"id":"96","parentid":"87","topid":"82","name":"操作日志","ct":"admin","ac":"oplog","reload":"1","url":"?ct=admin&ac=oplog"},{"id":"97","parentid":"87","topid":"82","name":"登录日志","ct":"admin","ac":"login_log","reload":"1","url":"?ct=admin&ac=login_log"}]},{"id":"106","parentid":"82","topid":"82","name":"会话管理","class":"fa fa-rocket","children":[{"id":"107","parentid":"106","topid":"82","name":"在线会话","ct":"session","ac":"online","reload":"1","url":"?ct=session&ac=online"},{"id":"108","parentid":"106","topid":"82","name":"历史会话","ct":"session","ac":"offline","reload":"1","url":"?ct=session&ac=offline"}]},{"id":"109","parentid":"82","topid":"82","name":"系统管理","class":"fa fa-wrench","children":[{"id":"110","parentid":"109","topid":"82","name":"配置管理","ct":"config","ac":"index","url":"?ct=config&ac=index"},{"id":"114","parentid":"109","topid":"82","name":"Spam管理","ct":"spam","ac":"index","url":"?ct=spam&ac=index"}]},{"id":"115","parentid":"82","topid":"82","name":"缓存管理","class":"fa fa-cloud","children":[{"id":"116","parentid":"115","topid":"82","name":"缓存管理","ct":"cache","ac":"index","url":"?ct=cache&ac=index"},{"id":"119","parentid":"115","topid":"82","name":"Redis键值管理","ct":"cache","ac":"redis_keys","url":"?ct=cache&ac=redis_keys"},{"id":"120","parentid":"115","topid":"82","name":"Redis服务器信息","ct":"cache","ac":"redis_info","url":"?ct=cache&ac=redis_info"}]},{"id":"121","parentid":"82","topid":"82","name":"资源管理","class":"fa fa-file","children":[{"id":"122","parentid":"121","topid":"82","name":"文件管理","ct":"filemanage","ac":"index","url":"?ct=filemanage&ac=index"}]},{"id":"129","parentid":"82","topid":"82","name":"作业中心","class":"fa fa-coffee","children":[{"id":"130","parentid":"129","topid":"82","name":"任务列表","ct":"crond","ac":"index","url":"?ct=crond&ac=index"}]}]}];
+
+        //子iframe调用管理关闭dropdown
+        function closeDrop(e){
+            if($(e.target).closest('.dropdown').length == 0){
+                /*
+                if($(".notify-wrap").hasClass("open")){  //判断是否为消息
+                    $("#notifyWrap .list-group-item").addClass("invalid-item");
+                    $(".msg-num").html("0").hide();
+                }
+                */
+                $('.dropdown').removeClass('open');
+                // 子iframe点击关闭右侧消息框
+                var msgDom = $('.msg-center');
+                if (msgDom && msgDom.hasClass('msg-select')){
+                    msgDom.removeClass("msg-select");
+                    msgDom.animate({
+                        right:'-400px'
+                    },400);
+                }
+            }
+        }
+
+        // 子iframe滚动给页签加上阴影效果
+        function tabsForShadow(eventType){
+            $('.content-tabs')[eventType]('content-tabs-shadow');
+        }
+
+        //顶部icon提示
+        $(function () { $("[data-toggle='tooltip']").tooltip(); });
+       /* //消息弹出
+        $("body").messageFn({
+            title:"最新消息",//标题
+            text:"开业啦",//内容
+            index:"2",//序号
+            url:"home.html",//链接
+            messageTitle:"测试"//导航标题
+        })
+        $("body").notifyFn({
+            title:"最新消息1",//标题
+            time:"2017-09-08 09：00",//内容
+            index:"5",//序号
+            url:"home.html",//链接
+            messageTitle:"最新消息",//导航标题
+            reload:true//是否要刷新页面
+        })*/
+
+        function fnIfram() {
+            $("body").on("click",".refresh-btn",function(){
+                var ifr = $("iframe");
+                for(var i = 0;i<ifr.length;i++){
+                    if(ifr.eq(i).css("display")=="inline") {
+                        ifr[i].contentWindow.location.reload(true);
+                    }
+                }
+            })
+        }
+
+        /*
+         * 内页跳转调用
+         * url当前跳转的url
+         * oldurl：url截取匹对的url
+         * */
+        function pageJumps(url, oldurl) {
+            $('#side-menu a[href="' + oldurl + '"]').attr('href', url);
+            $(".page-tabs-content").find(".J_menuTab").each(function() {
+                if ($(this).data("id").indexOf(oldurl) != -1) {
+                    $(this).attr("data-id", url)
+                }
+            });
+            $('#side-menu a[href="' + url + '"]').trigger('click');
+            $('#side-menu a[href="' + url + '"]').attr('href', oldurl);
+            $('#side-menu a[href="' + url + '"]').parents('li').addClass('active');
+            $('#side-menu a[href="' + url + '"]').parents('ul').addClass('in');
+        }
+        /*
+         * 表单提交跳转调用
+         * url当前跳转的url
+         * nowurl：当前所在url 如果要关闭当前页就传
+         * */
+        function formJumps(url, nowurl) {
+            $('#side-menu a[data-page="' + url + '"]').trigger('click');
+            if (nowurl != undefined) {
+                $(".page-tabs-content").find(".J_menuTab").each(function() {
+                    if ($(this).data("id").indexOf(nowurl) != -1) {
+                        $(this).remove();
+                    }
+                })
+            }
+            $('#side-menu a[data-page="' + url + '"]').parents('li').addClass('active');
+            $('#side-menu a[data-page="' + url + '"]').parents('ul').addClass('in');
+        }
+
+        /*
+        function is_switch(){
+            $('.lcs_check').lc_switch();
+            $('body').delegate('.lcs_check', 'lcs-statuschange', function() {
+                var status = ($(this).is(':checked')) ? 'checked' : 'unchecked';
+                if(status=="checked"){
+                    $(this).attr("checked","checked")
+                }else{
+                    $(this).removeAttr("checked")
+                }
+                var height = 130;
+                if($(this).attr("name")=="check1"){
+                    if($(this).parents(".form-group").siblings(".one-item").css("display")=="none"){
+                        height = 80
+                    }else{
+                        height=130;
+                    }
+                    if($(this).attr("checked")!=undefined){
+                        $(this).parents(".form-group").siblings(".enter-form").hide();
+                        $(this).closest(".layui-layer-content").css("height",height);
+                    }else{
+                        $(this).parents(".form-group").siblings(".enter-form").show();
+                        $(this).closest(".layui-layer-content").css("height",height+50);  
+                    }     
+                }
+            });
+        }
+
+        function showPassword(){
+            $("body").on("click",".eye-btn",function(){
+                var _this = $(this),
+                    _input =$(".eye-btn").siblings("input");
+                if(_input.attr("type")=="password"){
+                    _input.attr("type","text")
+                }else{
+                    _input.attr("type","password")
+                }
+            })
+            $("body").on("click",".copy-btn",function(){
+                var Url2= $(".layui-layer-content").find("#password").val();
+                var oInput = document.createElement('input');
+                oInput.value = Url2;
+                document.body.appendChild(oInput);
+                oInput.select(); // 选择对象
+                document.execCommand("Copy"); // 执行浏览器复制命令
+                oInput.className = 'oInput';
+                oInput.style.display='none';
+                $(".oInput").remove();
+                layer.msg('复制成功');
+                return false
+            })
+
+            $("body").on("input","#edit-password",function(){
+                var pwd_val = $(this).val();
+                var lv = 0;
+                if (pwd_val.match(/[A-Z]/g)) {
+                    lv++;
+                }
+                if (pwd_val.match(/[a-z]/g)) {
+                    lv++;
+                }
+                if (pwd_val.match(/[0-9]/g)) {
+                    lv++;
+                }
+                if (pwd_val.length >= 6 && pwd_val.length <= 18) {
+                    lv++
+                }
+                if (lv < 4) {
+                    $(this).siblings("span").show();
+                    return false;
+                } else {
+                        $(this).siblings("span").hide();
+                }
+            })
+        }
+        showPassword();
+        */
+    </script>
+
+
+
+</body></html>
