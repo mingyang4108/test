@@ -96,6 +96,15 @@ class ctl_task_mgt
         $this->_list();
     }
 
+    //test分支开始
+    public function list_void_test()
+    {
+        $task_back_url = mod_util::uri_string();
+        setcookie('task_back_url',$task_back_url);
+        $this->_list();
+    }
+    //test分支结束
+
     public function list_finished()
     {
         $task_back_url = mod_util::uri_string();
